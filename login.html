@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon2-modified.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
+    <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+  <!-- navbar -->
+  <header class="bg-color text-white">
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-dark navbar-expand-lg ">
+                <a href="index.html">
+                  <img class="homepage_logo" src="Dawn/navi_logo-removebg-preview.png" alt="logo" width="45px">
+                </a>
+                <a class="navbar-brand pe-5 home-logo" target="_blank" href="index.html">DAWN</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mainMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                  <div class="offcanvas offcanvas-end bg-color" data-bs-scroll="true"  id="mainMenu">
+                        <div class="offcanvas-header">
+                        <a href="index.html">
+                            <img class="homepage-logo" src="Dawn/navi_logo-removebg-preview.png" alt="logo" width="60px" height="70px">
+                        </a>
+                        <a class="navbar-brand pe-5 home-logo" target="_blank" href="index.html">DAWN</a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" ></button>
+                        </div>
+                        <div class="offcanvas-body">
+                        <ul class="navbar-nav nav-underline me-auto">
+                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
+                                <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">States</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="Kachin.html" class="dropdown-item">Kachin</a></li>
+                                    <li><a href="Kayar.html" class="dropdown-item">Kayar</a></li>
+                                    <li><a href="Kayin.html" class="dropdown-item">Kayin</a></li>
+                                    <li><a href="Chin.html" class="dropdown-item">Chin</a></li>
+                                    <li><a href="monstate.html" class="dropdown-item">Mon</a></li>
+                                    <li><a href="Rakhine State.html" class="dropdown-item">Rakhine</a></li>
+                                    <li><a href="shan state.html" class="dropdown-item">Shan</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a href="refrences.html" class="dropdown-item">References</a></li>
+                                </ul>
+                                </li>
+                            </ul>
+                            <div class="d-flex justify-content-end justify-content-md-start justify-content-sm-start">
+                            <ul class="navbar-nav nav-underline">
+                                <li class="nav-item"><a class="nav-link btn" href="signup.html">Sign Up</a></li>
+                                <li class="nav-item"><a class="nav-link btn" href="login.html">Login</a></li>
+                            </ul>
+                            </div>
+                        </div> 
+                    </div>
+              </nav>
+            
+        </div>
+    </div>
+</header>
+  <!-- navbar -->
+   <!-- Login Page -->
+   <div class="login-container text-white ms-5 mt-5 me-5 border border-black">
+     <div class="row d-flex flex-column flex-md-row">
+       <!-- Left Column -->
+       <div class="col-md-5 bg-white text-black left-column">
+         <h1 class="text-center mb-3">Welcome Back</h1>
+         <p class="mb-2">If you don't have an account,</p>
+         <p class="mb-2">you can create one for free!</p>
+         <p class="mb-2">It's totally free!</p>
+         <div class="d-grid">
+           <a href="signup.html" class="btn mon-btn btn-primary" type="button" data-bs-toggle="tooltip" title="Sign Up for free">Sign Up</a>
+         </div>
+         <div class="text-center">
+          <img src="Dawn/login3.jpg" alt="login" class="imgreg" style="width: 450px !important; height: 250px !important;">
+         </div>
+       </div>
+       <!-- Right Column (Login Form) -->
+       <div class="col-md-7 right-column">
+         <div class="row text-black">
+           <h1 class="text-white text-center">Login</h1>
+           <form action="index.html">
+                  <div class="input-group mb-3">
+                      <span class="input-group-text labelly">&#xf21b</span>
+                      <input type="name" id="fname" class="form-control" required data-bs-toggle="tooltip" placeholder="Please Type Your Username" title="Please type your Username to Login!">
+                  </div>
+                  <div class="input-group mb-3">
+                      <span class="input-group-text labelly">&#xf01c</span>
+                      <input type="email" id="email" class="form-control" required data-bs-toggle="tooltip" placeholder="Please Type Your Email" title="Please type your Email to Login">
+                  </div>
+                  <div class="input-group mb-3">
+                      <span class="input-group-text labelly">&#xf084</span>
+                      <input type="password" id="psw" class="form-control" required data-bs-toggle="tooltip" placeholder="Please Type Your Password" title="Please type your Password to Login">
+                  </div>
+                  <div class="form-check mb-3">
+                      <input type="checkbox" id="check2" name="checkPolicy2" value="check2" class="form-check-input">
+                      <label for="check2" class="form-check-label">Keep me logged in</label>
+                  </div>
+                  <div class="form-text text-end"><a href="#" class="atag" data-bs-toggle="tooltip" title="Forgot Your Password?">Reset Password?</a></div>
+                  <div class="d-grid">
+                      <button class="btn login-btn rounded-pill" type="submit" data-bs-target="index.html" data-bs-toggle="tooltip" title="Press to Continue!">Login</button>
+                  </div>
+                  <br>
+                  <div class="row text-center text-white">
+                      <p><b>Other Ways To Login</b></p>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                      <div class="btn-group" role="group">
+                          <a href="https://www.facebook.com" class="btn fa fa-facebook" data-bs-toggle="tooltip" title="Login With Facebook"></a>
+                          <a href="https://www.twitter.com" class="btn fa fa-twitter" data-bs-toggle="tooltip" title="Login With Twitter"></a>
+                          <a href="https://www.google.com" class="btn fa fa-google" data-bs-toggle="tooltip" title="Login With Google"></a>
+                      </div>
+                    </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+<!--Footer-->
+<div class="footer-dark mt-5">
+  <footer>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-3 item">
+          <h3>States</h3>
+          <ul>
+            <li><a href="Kachin.html">Kachin</a></li>
+            <li><a href="Kayar.html">Kayar</a></li>
+            <li><a href="Kayin.html">Kayin</a></li>
+            <li><a href="Chin.html">Chin</a></li>
+            <li><a href="monstate.html">Mon</a></li>
+            <li><a href="Rakhine State.html">Rakhine</a></li>
+            <li><a href="shan state.html">Shan</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-3 item">
+          <h3>About</h3>
+          <ul>
+              <li><a href="aboutus.html">Company</a></li>
+              <li><a href="aboutus.html">Team</a></li>
+              <li><a href="aboutus.html">Careers</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 item text">
+          <h3>Dawn</h3>
+          <p>Discover. Explore. Travel with us to create unforgettable memories and experience the world's wonders firsthand. Start your adventure today!</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col item line"></div>
+      </div>
+      <div class="row">
+        <div class="col item social">
+                      <a href="https://facebook.com/"><i class="icon ion-social-facebook"></i></a>
+                      <a href="https://twitter.com/"><i class="icon ion-social-twitter"></i></a>
+                      <a href="https://pinterest.com/"><i class="icon ion-social-pinterest"></i></a>
+                      <a href="https://google.com/"><i class="icon ion-social-google"></i></a>
+        </div> <br>
+        <small class="text-center mt-5">© Copyright 2023. All rights reserved. Developed by Dawn.</small>
+      </div>
+    </div>
+  </footer>
+</div>
+            <!--End of Login Page -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script>      
+        const tooltips=document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        tooltips.forEach(t =>{ new bootstrap.Tooltip(t)})
+      </script>
+  </body>
+</html>
